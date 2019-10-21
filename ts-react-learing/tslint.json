@@ -6,12 +6,22 @@
   ],
   "linterOptions": {
     "exclude": [
-      "config/**/*.js",
-      "node_modules/**/*.ts",
-      "coverage/lcov-report/*.js"
+      "**/node_modules/**"
     ]
   },
   "rules": {
-    "jsx-no-lambda": false
+    "jsx-no-lambda": false,
+    "interface-name": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-consecutive-blank-lines": false,
+    "max-line-length": [
+      false
+    ],
+    "no-console": false,
+    "triple-equals": [
+      false,
+      "allow-null-check"
+    ]
   }
 }
