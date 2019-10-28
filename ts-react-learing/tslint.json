@@ -10,6 +10,8 @@
     ]
   },
   "rules": {
+    "no-unused-expression": false,
+    "member-access": false,
     "jsx-no-lambda": false,
     "interface-name": false,
     "ordered-imports": false,
@@ -19,9 +21,11 @@
       false
     ],
     "no-console": false,
+    "no-shadowed-variable": false,
     "triple-equals": [
       false,
       "allow-null-check"
-    ]
+    ],
+    "allowSyntheticDefaultImports": true
   }
 }
