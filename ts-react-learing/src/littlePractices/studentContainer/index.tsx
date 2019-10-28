@@ -10,16 +10,13 @@ export default function () {
     const [page, setPage] = useState(1)
     useEffect(() => {
         API({
-            url: 'http://localhost:3000/test1.json',
+            url: 'http://yapi.demo.qunar.com/mock/17830/api/source/getNameList',
             method: "GET",
-            params: {
-                page
-            }
         }).then(res => {
             setStudent(res.data.data)
         })
         // 表示配置 page 变化的时候发生改变
-    }, [page])
+    }, [])
 
     return (
         <div>
